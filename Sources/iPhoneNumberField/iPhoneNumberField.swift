@@ -149,6 +149,7 @@ public struct iPhoneNumberField: UIViewRepresentable {
     public func makeUIView(context: UIViewRepresentableContext<Self>) -> PhoneNumberTextField {
         let uiView = UIViewType()
         
+        uiView.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         uiView.setContentHuggingPriority(.defaultHigh, for: .vertical)
         uiView.addTarget(context.coordinator,
                          action: #selector(Coordinator.textViewDidChange),
