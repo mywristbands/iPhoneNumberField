@@ -212,12 +212,20 @@ Use our exhaustive input list to customize your view.
 
 ## Install
 
-You can use the Swift package manager to install `iPhoneNumberField`. Find Xcode SPM instructions [here](./INSTALL.md)
+### Swift Package Manager
+To use [Swift Package Manager](https://swift.org/package-manager/) to integrate iPhoneNumberField into your Xcode project, follow the Xcode SPM instructions [here](./INSTALL.md)
 
 ```
 dependencies: [
     .package(url: "https://github.com/MojtabaHs/iPhoneNumberField.git", .upToNextMajor(from: "0.5.0"))
 ]
+```
+
+### Carthage
+To use the [Carthage](https://github.com/Carthage/Carthage) dependency manager to integrate iPhoneNumberField into your Xcode project, specify it in your `Cartfile`:
+
+```ogdl
+github "mywristbands/iPhoneNumberField"
 ```
 
 ## Help
