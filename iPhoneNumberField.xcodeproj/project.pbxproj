@@ -10,13 +10,30 @@
 		64FD13E4270BDA030001988C /* iPhoneNumberField+ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD13E1270BDA030001988C /* iPhoneNumberField+ViewModifiers.swift */; };
 		64FD13E5270BDA030001988C /* UIFont+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD13E2270BDA030001988C /* UIFont+Init.swift */; };
 		64FD13E6270BDA030001988C /* iPhoneNumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD13E3270BDA030001988C /* iPhoneNumberField.swift */; };
+		64FD13E9270BEE5D0001988C /* PhoneNumberKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FD13E8270BEE5D0001988C /* PhoneNumberKit.xcframework */; };
+		64FD13EA270BEE5D0001988C /* PhoneNumberKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 64FD13E8270BEE5D0001988C /* PhoneNumberKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64FD13EB270BEE5D0001988C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				64FD13EA270BEE5D0001988C /* PhoneNumberKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		64FD13C7270BD44C0001988C /* iPhoneNumberField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iPhoneNumberField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64FD13E1270BDA030001988C /* iPhoneNumberField+ViewModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iPhoneNumberField+ViewModifiers.swift"; sourceTree = "<group>"; };
 		64FD13E2270BDA030001988C /* UIFont+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Init.swift"; sourceTree = "<group>"; };
 		64FD13E3270BDA030001988C /* iPhoneNumberField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhoneNumberField.swift; sourceTree = "<group>"; };
+		64FD13E8270BEE5D0001988C /* PhoneNumberKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PhoneNumberKit.xcframework; path = Carthage/Build/PhoneNumberKit.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64FD13E9270BEE5D0001988C /* PhoneNumberKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +53,7 @@
 			children = (
 				64FD13DF270BDA030001988C /* Sources */,
 				64FD13C8270BD44C0001988C /* Products */,
+				64FD13E7270BEE5D0001988C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +83,14 @@
 			path = iPhoneNumberField;
 			sourceTree = "<group>";
 		};
+		64FD13E7270BEE5D0001988C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64FD13E8270BEE5D0001988C /* PhoneNumberKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -85,6 +112,7 @@
 				64FD13C3270BD44C0001988C /* Sources */,
 				64FD13C4270BD44C0001988C /* Frameworks */,
 				64FD13C5270BD44C0001988C /* Resources */,
+				64FD13EB270BEE5D0001988C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
